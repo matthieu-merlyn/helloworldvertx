@@ -20,3 +20,6 @@ spec:
           volumeMounts:
             - name: config
               mountPath: /deployments/conf
+        - resources:
+            limits:
+              memory: '250Mi'             
