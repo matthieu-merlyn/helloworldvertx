@@ -17,9 +17,10 @@ spec:
         - env:
             - name: VERTX_CONFIG_PATH
               value: '/deployments/conf/config.yml'
+          - resources:
+            limits:
+              memory: '250Mi'              
           volumeMounts:
             - name: config
               mountPath: /deployments/conf
-        - resources:
-            limits:
-              memory: '250Mi'             
+            
